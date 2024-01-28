@@ -50,7 +50,55 @@ nav {
 
 .menu-item {
     flex: 1;
+}
 
+@media (max-width: 900px) {
+    .menu-left {
+        display: none;
+    }
+
+    .title {
+        font-size: 80px;
+    }
+
+    .img-nav > aside {
+        display: none;
+    }
+
+    .images .img {
+        width: 150px;
+        height: 200px;
+    }
+    
+    .hero-image {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+        width: 50%;
+        height: 50vh;
+    }
+
+    .wrapper-img {
+        align-items: center;
+        align-content: center;
+        align-self: center;
+    }
+
+    .wrapper-img img{
+        width: 50%;
+        height: 50vh;
+
+    }
+
+    img.image {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .projects {
+        display: none;
+    }
 }
 
 .menu-left {

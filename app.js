@@ -57,3 +57,30 @@ TweenMax.staggerFrom('.menu > div, .hero-container > aside, .img-nav', 2, {
     ease: Expo.easeInOut,
     delay: 4.3,
 })
+
+let media = gsap.matchMedia();
+media.add("(max-width: 900px)", () => {
+
+    gsap.from('.img', 0.7, {
+        ease: Expo.easeInOut,
+        opacity: 0,
+        delay: 3,
+    })
+
+    gsap.to('.left', 2, {
+        y: '-100',
+        x: '-100',
+        rotation: -10,
+        ease: Expo.easeInOut,
+        delay: 4.2,
+    })
+
+    gsap.to('.right', 2, {
+        y: '-100',
+        x: '100',
+        rotation: 10,
+        ease: Expo.easeInOut,
+        delay: 4.2,
+    })
+
+});
